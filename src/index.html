@@ -12,13 +12,11 @@
         <script>let $ = require('jquery')</script>
         <script>require('popper.js')</script>
         <script>require('bootstrap')</script>
-
         <script src="js/Game.js"></script>
         <link rel="stylesheet" href="css/index.css">
     </head>
 
     <body>
-
         <div class="container" style="text-align: center">
             <button class="rounded btn-block" id="reset" onclick="reset()">RESET</button>
             <h6 id="game-message">Player 1 goes first!</h6>
@@ -36,5 +34,14 @@
             </div>
         </div>
 
+        <script>
+            const customTitlebar = require('custom-electron-titlebar');
+            new customTitlebar.Titlebar({
+                backgroundColor: customTitlebar.Color.fromHex("#154153"),
+                menu: null,
+                maximizable: false,
+                titleHorizontalAlignment: "left",
+            });
+        </script>
     </body>
 </html>

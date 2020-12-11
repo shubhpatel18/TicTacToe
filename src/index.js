@@ -7,6 +7,7 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
 }
 
 const createWindow = () => {
+
     // Create the browser window.
     const mainWindow = new BrowserWindow({
         webPreferences: {
@@ -15,13 +16,16 @@ const createWindow = () => {
         },
 
         width: 340,
-        height: 420,
+        height: 430,
         resizable: false,
 
         // don't show the window until its ready
         show: false,
+
+        // hide default title bar since we are using custom
+        titleBarStyle: "hidden",
+        frame: false,
     });
-    mainWindow.removeMenu()
 
     // and load the index.html of the app.
     mainWindow.loadFile(path.join(__dirname, 'index.html'));
