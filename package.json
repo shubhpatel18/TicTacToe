@@ -1,7 +1,7 @@
 {
   "name": "tictactoe",
-  "productName": "tictactoe",
-  "version": "1.1.0",
+  "productName": "Tic Tac Toe",
+  "version": "1.1.1",
   "description": "Tic Tac Toe",
   "main": "src/index.js",
   "scripts": {
@@ -24,7 +24,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "tictactoe"
+            "name": "TicTacToe"
           }
         },
         {
