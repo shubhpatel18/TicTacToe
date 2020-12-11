@@ -1,0 +1,49 @@
+.grid {
+    display: flex;                       /* establish flex container */
+    flex-wrap: wrap;                     /* enable flex items to wrap */
+    justify-content: space-around;
+    width: 18rem;
+    height: 18rem;
+}
+
+.square {
+    flex: 0 0 33%;
+    width: 6rem;
+    height: 6rem;
+    border: none;
+    background: none;
+}
+
+.square:focus {
+    outline: none;
+    border:none
+}
+
+.b-r-bord {
+    box-shadow: .08rem .08rem 0 .08rem black;
+}
+
+.r-bord {
+    box-shadow: .16rem 0 0 0 black;
+}
+
+.b-bord {
+    box-shadow: 0 .16rem 0 black;
+}
+
+#game-message {
+    padding: .75rem
+}
+
+#reset {
+    width: 100%;
+    height: 1.5rem;
+    border: none;
+    margin-top: .5rem;
+    vertical-align: center;
+}
+
+#reset:focus {
+    outline: none;
+    border:none
+}
