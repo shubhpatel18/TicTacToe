@@ -37,7 +37,10 @@
         <script>
             const customTitlebar = require('custom-electron-titlebar');
             new customTitlebar.Titlebar({
-                backgroundColor: customTitlebar.Color.fromHex("#154153"),
+                backgroundColor: customTitlebar.Color.fromHex(
+                    getComputedStyle(document.documentElement)
+                    .getPropertyValue('--secondary').trim()
+                ),
                 menu: null,
                 maximizable: false,
                 titleHorizontalAlignment: "left",
