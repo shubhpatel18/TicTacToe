@@ -1,7 +1,7 @@
 {
   "name": "tictactoe",
   "productName": "tictactoe",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Tic Tac Toe",
   "main": "src/index.js",
   "scripts": {
