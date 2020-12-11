@@ -50,6 +50,8 @@ function reset() {
     let squares = document.getElementsByClassName("square")
     for (let i = 0; i < squares.length; i++) {
         squares[i].innerText = ""
+        squares[i].classList.remove("p1")
+        squares[i].classList.remove("p2")
     }
     document.getElementById("game-message").innerText = "Player 1 goes first!"
     board.clear()
