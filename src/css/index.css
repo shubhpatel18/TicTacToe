@@ -1,3 +1,20 @@
+:root {
+    --primary: #1fbeff;
+    --secondary: #154153;
+
+    --button: var(--primary);
+    --bg: #c4ebff;
+    --borders: #6e8a98;
+}
+
+.p1 {
+    color: var(--primary);
+}
+
+.p2 {
+    color: var(--secondary);
+}
+
 .grid {
     display: flex;                       /* establish flex container */
     flex-wrap: wrap;                     /* enable flex items to wrap */
@@ -12,6 +29,9 @@
     height: 6rem;
     border: none;
     background: none;
+    font-weight: bolder;
+    font-size: 4rem;
+    font-family: sans-serif;
 }
 
 .square:focus {
@@ -20,19 +40,20 @@
 }
 
 .b-r-bord {
-    box-shadow: .08rem .08rem 0 .08rem black;
+    box-shadow: .08rem .08rem 0 .08rem var(--borders);
 }
 
 .r-bord {
-    box-shadow: .16rem 0 0 0 black;
+    box-shadow: .16rem 0 0 0 var(--borders);
 }
 
 .b-bord {
-    box-shadow: 0 .16rem 0 black;
+    box-shadow: 0 .16rem 0 var(--borders);
 }
 
 #game-message {
-    padding: .75rem
+    padding: .75rem .75rem 0 ;
+    font-weight: bold;
 }
 
 #reset {
@@ -41,9 +62,24 @@
     border: none;
     margin-top: .5rem;
     vertical-align: center;
+    background: var(--button);
+    color: white;
+    line-height: .75rem; /* half of height */
+    font-weight: lighter;
 }
 
 #reset:focus {
     outline: none;
     border:none
+}
+
+body {
+    background: var(--bg);
+    color: var(--secondary);
+    font-family: Montserrat, sans-serif;
+}
+
+hr {
+    padding: 0;
+    margin: 0 0 1rem;
 }

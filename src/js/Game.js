@@ -12,10 +12,13 @@ function update(box) {
     if (!game_over) {
         let success = board.click(box, player)
         if (success) {
+            let square = document.getElementById(box.toString())
             if (player === 1) {
-                document.getElementById(box.toString()).innerText = "X"
+                square.innerText = "X"
+                square.classList.add("p1")
             } else {
-                document.getElementById(box.toString()).innerText = "O"
+                square.innerText = "O"
+                square.classList.add("p2")
             }
 
             if (board.isWin()) {
