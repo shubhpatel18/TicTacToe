@@ -26,7 +26,7 @@ function update(box) {
                 game_over = true
 
             } else if (board.isFull()) {
-                document.getElementById("game-message").innerText = "Cat's!"
+                document.getElementById("game-message").innerText = "Tie!"
                 game_over = true
 
             } else {
